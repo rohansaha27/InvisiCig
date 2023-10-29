@@ -1,0 +1,49 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+}
+
+.screen {
+  text-align: center;
+}
+
+.centered-text {
+  margin-bottom: 20px;
+}
+
+.search-section {
+  margin: 20px 0;
+}
+
+input[type=text] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid black;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.results-container {
+  margin: 20px 0;
+}
+
+.result-item {
+  margin: 10px 0;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InvisiCig</title>
+<link rel="stylesheet" href="style.css" /> <!-- Adjusted the path -->
+</head>
+<body>
+
+<!-- Screen 1: Home Screen -->
+<div id="home-screen" class="screen">
+  <div class="centered-text">
+    <h1>InvisiCig</h1>
+    <h3>Air Purity vs Cigarette Smoke</h3>
+  </div>
+  <div class="search-section">
+    <p>Discover your city equivalent:</p>
+    <input type="text" id="city" placeholder="Enter your city">
+    <button onclick="fetchAQI()">Enter</button>
+    <p id="error-message" style="color: red;"></p> <!-- Error message placeholder -->
+  </div>
+</div>
+
+<!-- Screen 2: Results Screen -->
+<div id="results-screen" class="screen" style="display: none;">
+  <h2>AQI Results</h2>
+  <div class="results-container">
+    <div class="result-item">
+      <p id="aqi-result">AQI: N/A</p>
+    </div>
+    <div class="result-item">
+      <p id="cigarette-result">Cigarettes: N/A</p>
+    </div>
+  </div>
+  <button onclick="goBack()">Back</button> <!-- Back button -->
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
